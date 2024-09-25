@@ -1,0 +1,184 @@
+@charset "UTF-8";
+
+/* ページ全体のスタイル */
+body {
+    font-family: 'Noto Serif Japamese', serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75;
+    color: #333;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* a:hover {} */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+li {
+    list-style: none;
+}
+
+.content {
+    margin-bottom: 50px;
+}
+
+.title-logo {
+    max-width: 143px;
+    margin: 24px auto;
+    z-index: 1;
+}
+
+.main-visual {
+    width: 100%;
+    background-image: url(/assets/image/mainVisual_sp.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+}
+
+/* .s-point {
+    transform: translate(0, -50%);
+} */
+
+.selling-point {
+    transform: translate(0, -24%);
+    line-height: 1;
+    margin-left: 23px;
+    margin-bottom: 50px;
+}
+
+.selling-point h2 {
+    font-family: "Marcellus", system-ui;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 12.3px;
+    /* word-wrap: break-word; */
+}
+
+.selling-point p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* <!-- ﾎﾞﾀﾝ 併用 online-content --> */
+.online-content {
+    background-color: #F0F4FF;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.online-display {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.Product-name {
+    font-size: 18px;
+}
+
+.Product-price {
+    font-size: 14px;
+}
+
+.button {
+    display: block;
+    text-align: center;
+    border: 1.6px solid #fff;
+    border-radius: 34px;
+    width: 300px;
+    margin: auto;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 18px;
+}
+
+.btn-online {
+    background-color: #46C4DB;
+    margin-bottom: 20px;
+}
+
+.btn-purchase {
+    background-color: #5DD5AB;
+}
+
+
+/* 広告 */
+.advertisement-content {
+    color: #fff;
+    margin-bottom: 46px;
+}
+
+.quality {
+    width: 100%;
+    background-image: url(../image/merchandise_sp.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+}
+
+.quality {
+    text-align: center;
+    padding-top: 48px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.quality-en {
+    font-family: "EB Garamond", system-ui;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.quality-ja {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.quality p {
+    text-align: left;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 318px;
+}
+
+
+/* 感想 */
+.Voices-content {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.title-voices {
+    text-align: center;
+}
+
+.Voices {
+    font-family: "EB Garamond", system-ui;
+    font-size: 30px;
+    font-weight: bold;    
+}
+
+.customer-Voices {
+    font-weight: 400;
+    margin-bottom: 36px;
+}
+
+
+
+.purchaser-woman {
+    text-align: center;
+}
+
+.purchaser-opinion {
+    text-align: left;
+}
