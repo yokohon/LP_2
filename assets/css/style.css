@@ -38,10 +38,10 @@ li {
 
 .main-visual {
     width: 100%;
-    background-image: url(/assets/image/mainVisual_sp.jpg);
+    background-image: url(../image/mainVisual_sp.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 450px;
+    aspect-ratio: 390 / 450;
 }
 
 /* .s-point {
@@ -123,7 +123,7 @@ li {
     background-image: url(../image/merchandise_sp.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 900px;
+    aspect-ratio: 390 / 900;
 }
 
 .quality {
@@ -157,7 +157,11 @@ li {
 .Voices-content {
     margin-left: 16px;
     margin-right: 16px;
+    padding-left: 39px;
+    padding-right: 39px;
 }
+
+
 .title-voices {
     text-align: center;
 }
@@ -165,7 +169,7 @@ li {
 .Voices {
     font-family: "EB Garamond", system-ui;
     font-size: 30px;
-    font-weight: bold;    
+    font-weight: bold;
 }
 
 .customer-Voices {
@@ -173,12 +177,149 @@ li {
     margin-bottom: 36px;
 }
 
-
-
 .purchaser-woman {
     text-align: center;
+    font-size: 14px;
+    padding-top: 20px;
 }
 
 .purchaser-opinion {
+    font-size: 14px;
     text-align: left;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 28px;
+}
+
+.layout-Properties {
+    background-color: #DBF7F9;
+    padding-top: 28px;
+}
+
+.Voices-point {
+    margin: auto;
+}
+
+.slick-prev,
+.slick-next {
+    z-index: 100;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: #00AFBF;
+}
+
+
+
+/* Q&A */
+
+.inquiry-content {
+    background: transparent linear-gradient(90deg, #F4FFE8 0%, #C6F0FE 100%) 0% 0% no-repeat padding-box;
+}
+
+.inquiry-title {
+    text-align: center;
+    line-height: 1;
+    padding-top: 32px;
+}
+
+.inquiry-title h2 {
+    font-family: "EB Garamond", serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.inquiry-title p {
+    font-size: 16px;
+    padding-top: 4px;
+}
+
+/* Q&A */
+
+/* .inquiry-list {} */
+
+.quistion-strt {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.quistion-box {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    gap: 6px;
+    padding-top: 20px;
+    padding-bottom: 22px;
+    padding-left: 14px;
+    padding-right: 40px;
+    position: relative;
+}
+
+.quistion-icon {
+        width: 32px;
+        height: 32px;
+        place-items: center;
+        display: grid;
+        font-family: "EB Garamond", system-ui;
+        font-weight: 800;
+        color: #444;
+        border-radius: 50%;
+        line-height: 1;
+        font-size: 1rem;
+        padding: 0.5rem;
+        flex-shrink: 0;
+}
+
+.customer-q-text {
+    font-size: 15px;
+}
+
+.bi-caret-up-fill {
+    position: absolute;
+    top: 11px;
+    right: 13px;
+}
+
+/* ▼ の向き */
+.quistion-box.open i::before {
+    color: #f26618;
+    transform: rotate(180deg);
+  }
+  
+  .quistion-box i::before {
+    color: #f26618;
+    transform: rotate(0deg);
+  }
+
+.answer-strt {
+    border: #f26618;
+    background-color: #ffeee5;
+    padding: 15px 16px 18px 14px;
+    font-size: 1.5rem;
+    border-radius: 0 0 10px 10px;
+    display: none;
+}
+
+.answer-box {
+    display: flex;
+    gap: 11px;
+    align-items: flex-start;
+}
+
+.answer-icon {
+    width: 34px;
+    height: 34px;
+    place-items: center;
+    display: grid;
+    font-family: "EB Garamond", system-ui;
+    font-weight: 800;
+    color: #444;
+    border-radius: 50%;
+    line-height: 1;
+    font-size: 16px;
+    padding: 9px;
+    flex-shrink: 0;
 }
