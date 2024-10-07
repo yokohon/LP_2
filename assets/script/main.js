@@ -6,7 +6,7 @@ $('.carousel').slick({
   });
 
 
-  $('.quistion-box').on('click', function(e) {
+  $('.quistion-strt').on('click', function(e) {
     var content = $(this).next();
     content.slideToggle();
   $(this).toggleClass("open");
