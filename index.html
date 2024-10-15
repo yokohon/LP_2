@@ -36,20 +36,23 @@
 </head>
 
 <body>
-    <header>
-        <h1 class="title-logo">
+    <header class="header">
+        <h1 class="header-logo">
             <a href=""><img src="assets/image/logo-sp.png" alt="Kira-meki"></a>
         </h1>
+
+        <div>
+            <picture class="main-visual">
+                <source media="(min-width: 768px)" srcset="assets/image/mainVisual_pc.jpg">
+                <img src="assets/image/mainVisual_sp.jpg" alt="">
+            </picture>
+        </div>
+        <div class="selling-point">
+            <h2 class="s-point">Kirameki</h2>
+            <h2>Cream</h2>
+            <p>肌のうるおい、煌めく。</p>
+        </div>
     </header>
-    <div class="main-visual">
-    </div>
-    <div class="selling-point">
-        <h2 class="s-point">Kirameki</h2>
-        <h2>Cream</h2>
-
-        <p>肌のうるおい、煌めく。</p>
-    </div>
-
 
 
     <!-- ﾎﾞﾀﾝ 併用 -->
@@ -58,15 +61,23 @@
             <h3 class="Product-name">キラメキクリーム</h3>
             <p class="Product-price">税込4,000円</p>
         </div>
-        <div>
+        <div class="online-buttan">
             <a class="button btn-online" href="">オンラインショップへ</a>
-            <a class="button btn-purchase" href="/cart/">購入する</a>
+            <form action="/cart/" method="POST">
+                <button class="button btn-purchase" type="submit">購入する
+                </button>
+            </form>
         </div>
     </section>
 
     <!-- 広告 -->
     <section class="content advertisement-content">
+        <picture>
+            <source media="(min-width: 768px)" srcset="assets/image/merchandise_pc.jpg">
+            <img src="assets/image/merchandise_sp.jpg" art="">
+        </picture>
         <div class="quality">
+
             <h2 class="quality-en">Keep Your Skin Beautiful.</h2>
             <h2 class="quality-ja">お肌を美しく保つ</h2>
             <p>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
@@ -165,9 +176,9 @@
         </div>
 
         <div class="inquiry-list">
-            <div class="quistion-strt open">
-                <div class="quistion-box">
-                    <p class="quistion-icon">Q.</p>
+            <div class="question-strt">
+                <div class="question-box">
+                    <p class="question-icon">Q.</p>
                     <p class="customer-q-text">テキストが入ります。テキストが入ります。テキストが入ります。</p>
                 </div>
                 <i class="bi bi-caret-up-fill"></i>
@@ -183,9 +194,9 @@
         </div>
 
         <div class="inquiry-list">
-            <div class="quistion-strt open">
-                <div class="quistion-box">
-                    <p class="quistion-icon">Q.</p>
+            <div class="question-strt">
+                <div class="question-box">
+                    <p class="question-icon">Q.</p>
                     <p class="customer-q-text">テキストが入ります。テキストが入ります。テキストが入ります。</p>
                 </div>
                 <i class="bi bi-caret-up-fill"></i>
@@ -200,9 +211,9 @@
             </div>
         </div>
         <div class="inquiry-list">
-            <div class="quistion-strt open">
-                <div class="quistion-box">
-                    <p class="quistion-icon">Q.</p>
+            <div class="question-strt">
+                <div class="question-box">
+                    <p class="question-icon">Q.</p>
                     <p class="customer-q-text">テキストが入ります。テキストが入ります。テキストが入ります。</p>
                 </div>
                 <i class="bi bi-caret-up-fill"></i>
@@ -217,14 +228,14 @@
             </div>
         </div>
         <div class="inquiry-list">
-            <div class="quistion-strt">
-                <div class="quistion-box">
-                    <p class="quistion-icon">Q.</p>
+            <div class="question-strt">
+                <div class="question-box">
+                    <p class="question-icon">Q.</p>
                     <p class="customer-q-text">テキストが入ります。テキストが入ります。テキストが入ります。</p>
                 </div>
                 <i class="bi bi-caret-up-fill"></i>
             </div>
-            <div class="answer-strt open">
+            <div class="answer-strt">
                 <div class="answer-box">
                     <p class="answer-icon">A.</p>
                     <p class="customer-a-text">
@@ -234,14 +245,14 @@
             </div>
         </div>
         <div class="inquiry-list">
-            <div class="quistion-strt">
-                <div class="quistion-box">
-                    <p class="quistion-icon">Q.</p>
+            <div class="question-strt">
+                <div class="question-box">
+                    <p class="question-icon">Q.</p>
                     <p class="customer-q-text">テキストが入ります。テキストが入ります。テキストが入ります。</p>
                 </div>
                 <i class="bi bi-caret-up-fill"></i>
             </div>
-            <div class="answer-strt open">
+            <div class="answer-strt">
                 <div class="answer-box">
                     <p class="answer-icon">A.</p>
                     <p class="customer-a-text">
@@ -258,9 +269,12 @@
             <h3 class="Product-name">キラメキクリーム</h3>
             <p class="Product-price">税込4,000円</p>
         </div>
-        <div>
+        <div class="online-buttan">
             <a class="button btn-online" href="">オンラインショップへ</a>
-            <a class="button btn-purchase" href="/cart/">購入する</a>
+            <form action="/cart/" method="POST">
+                <button class="button btn-purchase" type="submit">購入する
+                </button>
+            </form>
         </div>
     </section>
 
@@ -276,7 +290,7 @@
                 <li><a href="/privacy-policy/">個人情報保護ポリシー</a></li>
                 <li><a href="/contact/">お問い合わせ</a></li>
             </ul>
-            
+
             <small class="footer-copyright">© 2023 Kira-meki Inc. All rights reserved.</small>
 
             <!-- 戻りﾎﾞﾀﾝ -->
