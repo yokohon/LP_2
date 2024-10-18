@@ -30,6 +30,11 @@ li {
     margin-bottom: 50px;
 }
 
+
+
+
+
+
 .header {
     position: relative;
 }
@@ -43,6 +48,17 @@ li {
     z-index: 1;
 }
 
+@media (min-width: 768px) {
+    .header-logo {
+        min-width: 166px;
+        margin-top: 32px;
+    }
+}
+
+.cover {
+    position: relative;
+}
+
 .main-visual {
     width: 100%;
     /* background-image: url(../image/mainVisual_sp.jpg);
@@ -51,23 +67,17 @@ li {
     aspect-ratio: 390 / 450;
 }
 
-
-
-/* .s-point {
-    transform: translate(0, -50%);
-} */
-
 .selling-point {
-    transform: translate(0, -24%);
+    position: absolute;
+    left: 23px;
+    bottom: -74px;
     line-height: 1;
-    margin-left: 23px;
-    margin-bottom: 50px;
 }
 
 @media (min-width: 768px) {
     .selling-point {
-        transform: translate(0, -325%);
-        margin-left: 203px;
+        margin: 0;
+        margin-left: 223px;
     }
 }
 
@@ -83,7 +93,8 @@ li {
 @media (min-width: 768px) {
     .selling-point h2 {
         font-size: 50px;
-        letter-spacing: 11.7px;
+        letter-spacing: 15px;
+        line-height: 1.75;
     }
 }
 
@@ -95,22 +106,35 @@ li {
 @media (min-width: 768px) {
     .selling-point p {
         font-size: 25px;
+        letter-spacing: 7.5px;
     }
 }
 
 /* <!-- ﾎﾞﾀﾝ 併用 online-content --> */
 .online-content {
     background-color: #F0F4FF;
+    margin-top: 157px;
     margin-left: 16px;
     margin-right: 16px;
     padding-top: 20px;
     padding-bottom: 40px;
 }
 
+.online-content-2 {
+    margin-top: 50px;
+}
 
 @media (min-width: 768px) {
     .online-content {
+        max-width: 1000px;
         display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 38px;
+        margin-bottom: 38px;
+        padding-top: 44px;
+        padding-bottom: 44px;
     }
 }
 
@@ -138,12 +162,14 @@ li {
 @media (min-width: 768px) {
     .Product-price {
         font-size: 16px;
+        text-align: left;
     }
 }
 
 @media (min-width: 768px) {
     .online-buttan {
         display: flex;
+        column-gap: 20px;
     }
 }
 
@@ -229,7 +255,7 @@ li {
     font-size: 14px;
     font-weight: 400;
     line-height: 2;
-    margin-bottom: 318px;
+    /* margin-bottom: 318px; */
 }
 
 
@@ -302,6 +328,7 @@ li {
 .slick-next {
     right: -39px;
 }
+
 .slick-prev:before,
 .slick-next:before {
     color: #00AFBF;
