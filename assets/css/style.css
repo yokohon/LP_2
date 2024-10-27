@@ -56,28 +56,39 @@ li {
 }
 
 .cover {
+    width: 100%;
+    background-image: url(../image/mainVisual_sp.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    aspect-ratio: 390 / 450;
     position: relative;
 }
 
-.main-visual {
-    width: 100%;
-    /* background-image: url(../image/mainVisual_sp.jpg);
-    background-repeat: no-repeat;
-    background-size: cover; */
-    aspect-ratio: 390 / 450;
+@media (min-width: 768px) {
+    .cover {
+        background-image: url(../image/mainVisual_pc.jpg);
+        aspect-ratio: 1500 / 720;
+    }
 }
 
+
 .selling-point {
-    position: absolute;
-    left: 23px;
-    bottom: -74px;
+    max-width: 358px;
+    margin: auto;
     line-height: 1;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
 }
 
 @media (min-width: 768px) {
     .selling-point {
-        margin: 0;
-        margin-left: 223px;
+        max-width: 1200px;
+        margin: auto;
+        padding-top: 272px;
+        padding-left: 100px;
+        position: static;
+        transform: none;
     }
 }
 
@@ -88,7 +99,6 @@ li {
     letter-spacing: 12.3px;
     /* word-wrap: break-word; */
 }
-
 
 @media (min-width: 768px) {
     .selling-point h2 {
@@ -126,7 +136,7 @@ li {
 
 @media (min-width: 768px) {
     .online-content {
-        max-width: 1000px;
+        max-width: 1200px;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -143,10 +153,15 @@ li {
     margin-bottom: 20px;
 }
 
+@media (min-width: 768px) {
+    .online-display {
+        margin: 0;
+    }
+}
+
 .Product-name {
     font-size: 18px;
 }
-
 
 @media (min-width: 768px) {
     .Product-name {
@@ -216,18 +231,50 @@ li {
 
 /* 広告 */
 .advertisement-content {
-    position: relative;
     color: #fff;
     margin-bottom: 46px;
 }
 
-.quality {
+.advertisement {
+    position: relative;
+    width: 100%;
+    background-image: url(../image/merchandise_sp.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     aspect-ratio: 390 / 680;
+}
+
+@media (min-width: 768px) {
+    .advertisement {
+        background-image: url(../image/merchandise_pc.jpg);
+        aspect-ratio: 1500 / 550;
+    }
+}
+
+@media (min-width: 768px) {
+    .quality-content {
+        max-width: 1200px;
+        margin: auto;
+    }
+}
+
+.quality {
     position: absolute;
     text-align: center;
     top: 48px;
     left: 16px;
     right: 16px;
+}
+
+@media (min-width: 768px) {
+    .quality {
+        position: static;
+        aspect-ratio: auto;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: 10px;
+        text-align: left;
+    }
 }
 
 .quality-en {
@@ -271,7 +318,6 @@ li {
     padding-right: 39px;
 }
 
-
 .title-voices {
     text-align: center;
 }
@@ -287,28 +333,29 @@ li {
     margin-bottom: 36px;
 }
 
-.purchaser-woman {
+/* スライダー */
+.carousel-Customer {
+    background-color: #DBF7F9;
+    padding-top: 28px;
+}
+
+.carousel-Customer-thumbnail {
+    margin: auto;
+}
+
+.carousel-Customer-name {
     text-align: center;
     font-size: 14px;
     padding-top: 20px;
 }
 
-.purchaser-opinion {
+.carousel-Customer-opinion {
     font-size: 14px;
     text-align: left;
     padding-top: 20px;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 28px;
-}
-
-.layout-Properties {
-    background-color: #DBF7F9;
-    padding-top: 28px;
-}
-
-.Voices-point {
-    margin: auto;
 }
 
 .slick-prev,
@@ -361,14 +408,7 @@ li {
 }
 
 
-
-
-
-
-
-
 /* Q&A */
-
 .inquiry-content {
     background: transparent linear-gradient(90deg, #F4FFE8 0%, #C6F0FE 100%) 0% 0% no-repeat padding-box;
     padding-bottom: 32px;
@@ -395,6 +435,13 @@ li {
 .inquiry-list {
     background-color: #fff;
     margin: 1rem;
+}
+
+@media (min-width: 768px) {
+    .inquiry-list {
+        max-width: 600px;
+        margin: 1rem auto;
+    }
 }
 
 .question-strt {
@@ -490,11 +537,28 @@ footer {
     padding-bottom: 24px;
 }
 
+@media (min-width: 768px) {
+    .footer-title {
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+    }
+}
+
 footer h2 {
     text-align: center;
     font-family: "Marcellus", system-ui;
     font-size: 35px;
     letter-spacing: 5.6px;
+}
+
+@media (min-width: 768px) {
+    footer h2 {
+        font-size: 32px;
+    }
 }
 
 .footer-nav {
@@ -503,6 +567,13 @@ footer h2 {
     font-size: 12px;
     padding-top: 24px;
     padding-bottom: 25px;
+}
+
+@media (min-width: 768px) {
+    .footer-nav {
+        font-size: 14px;
+        padding: 0;
+    }
 }
 
 .buttom-to-top {
@@ -514,4 +585,10 @@ footer h2 {
     width: 40px;
     height: 40px;
     font-size: 24px;
+}
+
+@media (min-width: 768px) {
+    .buttom-to-top {
+        bottom: 103px;
+    }
 }

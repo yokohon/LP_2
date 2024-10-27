@@ -1,3 +1,5 @@
+
+
 $('.carousel').slick({
   autoplay: false, // 自動再生
   autoplaySpeed: 5000, // 自動再生の速さ、単位はミリ秒
@@ -13,6 +15,7 @@ $('.carousel').slick({
       settings: {
         slidesToShow: 3, // このサイズでの表示スライド数
         slidesToScroll: 3,
+        fade: false, // フェードを無効にする
       }
     }
   ]
