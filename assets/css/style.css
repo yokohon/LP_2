@@ -137,10 +137,12 @@ li {
 @media (min-width: 768px) {
     .online-content {
         max-width: 1200px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        flex-wrap: wrap;
         margin: 0 auto;
+        display: flex;
+        column-gap: 64px;
+        align-items: center;
+        justify-content: center;
         margin-top: 38px;
         margin-bottom: 38px;
         padding-top: 44px;
@@ -155,6 +157,7 @@ li {
 
 @media (min-width: 768px) {
     .online-display {
+        min-width: 192px;
         margin: 0;
     }
 }
@@ -337,6 +340,12 @@ li {
 .carousel-Customer {
     background-color: #DBF7F9;
     padding-top: 28px;
+}
+
+@media (min-width: 768px) {
+    .carousel-Customer {
+        margin: 0 40px;
+    }
 }
 
 .carousel-Customer-thumbnail {
@@ -558,12 +567,15 @@ footer h2 {
 @media (min-width: 768px) {
     footer h2 {
         font-size: 32px;
+        min-width: 190px;
     }
 }
 
 .footer-nav {
     display: flex;
-    justify-content: space-around;
+    max-width: 300px;
+    margin: auto;
+    gap: 30px;
     font-size: 12px;
     padding-top: 24px;
     padding-bottom: 25px;
@@ -571,10 +583,19 @@ footer h2 {
 
 @media (min-width: 768px) {
     .footer-nav {
+        min-width: 320px;
         font-size: 14px;
         padding: 0;
     }
 }
+
+
+@media (min-width: 768px) {
+    .footer-copyright {
+        min-width: 241px;
+    }
+}
+
 
 .buttom-to-top {
     position: absolute;
