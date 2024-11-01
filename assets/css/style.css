@@ -42,7 +42,7 @@ li {
 .header-logo {
     position: absolute;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0);
     max-width: 143px;
     margin: 24px auto;
     z-index: 1;
@@ -77,8 +77,9 @@ li {
     margin: auto;
     line-height: 1;
     position: absolute;
+    left: 24px;
     bottom: 0;
-    transform: translateY(50%);
+    transform: translateY(80%);
 }
 
 @media (min-width: 768px) {
@@ -96,8 +97,8 @@ li {
     font-family: "Marcellus", system-ui;
     font-size: 40px;
     font-weight: 400;
-    letter-spacing: 12.3px;
-    /* word-wrap: break-word; */
+    letter-spacing: 12.7px;
+    margin-bottom: 12px;
 }
 
 @media (min-width: 768px) {
@@ -111,6 +112,8 @@ li {
 .selling-point p {
     font-size: 20px;
     font-weight: 400;
+    margin-top: 17px;
+    letter-spacing: 5.8px;
 }
 
 @media (min-width: 768px) {
@@ -123,11 +126,12 @@ li {
 /* <!-- ﾎﾞﾀﾝ 併用 online-content --> */
 .online-content {
     background-color: #F0F4FF;
+    letter-spacing: 1.4px;
     margin-top: 157px;
     margin-left: 16px;
     margin-right: 16px;
-    padding-top: 20px;
-    padding-bottom: 40px;
+    padding-top: 17.6px;
+    padding-bottom: 33px;
 }
 
 .online-content-2 {
@@ -152,7 +156,7 @@ li {
 
 .online-display {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
 
 @media (min-width: 768px) {
@@ -199,14 +203,15 @@ li {
     border-radius: 34px;
     width: 300px;
     margin: auto;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 14px;
+    padding-bottom: 13px;
     font-size: 18px;
+    letter-spacing: 0.3px;
 }
 
 .btn-online {
     background-color: #46C4DB;
-    margin-bottom: 20px;
+    margin-bottom: 17.4px;
 }
 
 @media (min-width: 768px) {
@@ -264,7 +269,7 @@ li {
 .quality {
     position: absolute;
     text-align: center;
-    top: 48px;
+    top: 40px;
     left: 16px;
     right: 16px;
 }
@@ -284,6 +289,7 @@ li {
     font-family: "EB Garamond", system-ui;
     font-size: 30px;
     font-weight: bold;
+    padding-top: 2px;
 }
 
 @media (min-width: 768px) {
@@ -296,7 +302,8 @@ li {
 .quality-ja {
     font-size: 24px;
     font-weight: 600;
-    margin-bottom: 20px;
+    line-height: 1.6;
+    margin-bottom: 11px;
 }
 
 
@@ -304,14 +311,15 @@ li {
     text-align: left;
     font-size: 14px;
     font-weight: 400;
-    line-height: 2;
-    /* margin-bottom: 318px; */
+    line-height: 2.29;
 }
 
 
 /* 感想 */
 .slick-slide img {
-    width: 80px;
+    box-sizing: border-box;
+    width: 88px;
+    padding-left: 8px;
 }
 
 .Voices-content {
@@ -323,17 +331,22 @@ li {
 
 .title-voices {
     text-align: center;
+    padding-top: 8px;
+    padding-left: 2px;
+    letter-spacing: 1.8px;
 }
 
 .Voices {
     font-family: "EB Garamond", system-ui;
     font-size: 30px;
     font-weight: bold;
+    line-height: 1;
+    margin-bottom: 8px;
 }
 
 .customer-Voices {
     font-weight: 400;
-    margin-bottom: 36px;
+    margin-bottom: 32px;
 }
 
 /* スライダー */
@@ -355,27 +368,35 @@ li {
 .carousel-Customer-name {
     text-align: center;
     font-size: 14px;
-    padding-top: 20px;
+    padding-top: 9px;
 }
 
 .carousel-Customer-opinion {
     font-size: 14px;
     text-align: left;
-    padding-top: 20px;
+    line-height: 1.95;
+    padding-top: 13px;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 28px;
 }
 
+
+.slick-dotted.slick-slider {
+    margin-bottom: 73px;
+}
+
 .slick-prev,
 .slick-next {
     z-index: 100;
+    width: 32px;
+    transform: translate(0, -80%)
 }
 
-.slick-next,
+/* .slick-next,
 .slick-prev {
     width: 32px;
-}
+} */
 
 .slick-prev {
     left: -39px;
@@ -400,6 +421,15 @@ li {
     content: '\F129';
 }
 
+.slick-dots {
+    bottom: -32px;
+}
+
+.slick-dots li {
+    margin: 0;
+    width: 17.6px;
+}
+
 .slick-dots li button {
     color: #eee;
     font-size: 9px;
@@ -408,7 +438,7 @@ li {
 
 .slick-dots li.slick-active button:before {
     color: #00AFBF;
-    font-size: 9px;
+    font-size: 10px;
 }
 
 .slick-dots li button:before {
@@ -426,7 +456,8 @@ li {
 .inquiry-title {
     text-align: center;
     line-height: 1;
-    padding-top: 32px;
+    padding-top: 39px;
+    margin-bottom: 40px;
 }
 
 .inquiry-title h2 {
@@ -437,13 +468,15 @@ li {
 
 .inquiry-title p {
     font-size: 16px;
-    padding-top: 4px;
+    padding-top: 11px;
+    letter-spacing: 0.5px;
 }
 
 
 .inquiry-list {
     background-color: #fff;
     margin: 1rem;
+    margin-top: 20px;
 }
 
 @media (min-width: 768px) {
@@ -465,10 +498,10 @@ li {
     display: flex;
     justify-content: space-between;
     gap: 12px;
-    margin-top: 20px;
-    margin-bottom: 22px;
+    margin-top: 18px;
     margin-left: 14px;
     margin-right: 40px;
+    margin-bottom: 16px;
 }
 
 .question-icon {
@@ -488,10 +521,10 @@ li {
     font-size: 15px;
 }
 
-.bi-caret-up-fill {
+.bi-caret-down-fill {
     position: absolute;
     top: 17px;
-    right: 16px;
+    right: 14px;
 }
 
 /* ▼ の向き */
@@ -506,7 +539,6 @@ li {
 }
 
 .answer-strt {
-    margin: 15px 16px 18px 14px;
     font-size: 15px;
     display: none;
 }
@@ -515,6 +547,9 @@ li {
     display: flex;
     gap: 12px;
     align-items: flex-start;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
 }
 
 .answer-icon {
@@ -549,6 +584,7 @@ footer {
 @media (min-width: 768px) {
     .footer-title {
         max-width: 1200px;
+        flex-wrap: wrap;
         margin: auto;
         display: flex;
         align-items: center;
@@ -583,7 +619,7 @@ footer h2 {
 
 @media (min-width: 768px) {
     .footer-nav {
-        min-width: 320px;
+        min-width: 340px;
         font-size: 14px;
         padding: 0;
     }
