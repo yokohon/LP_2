@@ -51,8 +51,8 @@ li {
 @media (min-width: 768px) {
     .header-logo {
         min-width: 166px;
-        margin-top: 34px;
-        transform: translate(-25%, 0);
+        margin-top: 32px;
+        transform: translate(-50%, 0);
     }
 }
 
@@ -68,7 +68,7 @@ li {
 @media (min-width: 768px) {
     .cover {
         background-image: url(../image/mainVisual_pc.jpg);
-        aspect-ratio: 1500 / 760;
+        aspect-ratio: 1500 / 720;
     }
 }
 
@@ -87,8 +87,11 @@ li {
     .selling-point {
         max-width: 1200px;
         margin: auto;
-        position: static;
         transform: none;
+        bottom: auto;
+        width: 100%;
+        top: 39%;
+        left: 14.9%;
     }
 }
 
@@ -104,7 +107,8 @@ li {
     .selling-point h2 {
         font-size: 50px;
         letter-spacing: 15px;
-        line-height: 1.75;
+        line-height: 0.87;
+        margin-bottom: 26px;
     }
 }
 
@@ -143,12 +147,13 @@ li {
         flex-wrap: wrap;
         margin: auto;
         display: flex;
-        column-gap: 64px;
         align-items: center;
-        margin-top: 49px;
-        margin-bottom: 47px;
+        margin-top: 47px;
+        margin-bottom: 46px;
         padding-top: 38px;
         padding-bottom: 39px;
+        padding-right: 17px;
+        padding-left: 16.5px;
     }
 }
 
@@ -159,8 +164,8 @@ li {
 
 @media (min-width: 768px) {
     .online-display {
-        min-width: 192px;
-        margin: 0;
+        min-width: 208px;
+        margin: 0 auto;
     }
 }
 
@@ -172,6 +177,7 @@ li {
     .Product-name {
         font-size: 24px;
         font-weight: 600;
+        letter-spacing: 2.5px;
     }
 }
 
@@ -183,13 +189,21 @@ li {
     .Product-price {
         font-size: 16px;
         text-align: left;
+        margin-right: 20px;
+        margin-top: 2px;
+    }
+}
+
+@media (min-width: 768px) {
+    .online-display span {
+        margin-left: 6px;
     }
 }
 
 @media (min-width: 768px) {
     .online-buttan {
         display: flex;
-        column-gap: 20px;
+        column-gap: 32px;
         margin: auto;
     }
 }
@@ -242,6 +256,12 @@ li {
     margin-bottom: 46px;
 }
 
+@media (min-width: 768px) {
+    .advertisement-content {
+        margin-bottom: 0;
+    }
+}
+
 .advertisement {
     position: relative;
     width: 100%;
@@ -254,7 +274,7 @@ li {
 @media (min-width: 768px) {
     .advertisement {
         background-image: url(../image/merchandise_pc.jpg);
-        aspect-ratio: 1500 / 581;
+        aspect-ratio: 1500 / 550;
     }
 }
 
@@ -272,9 +292,10 @@ li {
     .quality {
         max-width: 467px;
         text-align: left;
-        top: 116px;
+        width: 100%;
+        top: 21%;
         left: auto;
-        right: 123px;
+        right: 13.6%;
     }
 }
 
@@ -288,6 +309,8 @@ li {
 @media (min-width: 768px) {
     .quality-en {
         font-size: 38px;
+        padding-top: 4px;
+        line-height: 1.7;
     }
 }
 
@@ -299,6 +322,13 @@ li {
     margin-bottom: 11px;
 }
 
+@media (min-width: 768px) {
+    .quality-ja {
+        line-height: 1.4px;
+        margin-top: 16px;
+        margin-bottom: 30px;
+    }
+}
 
 .quality p {
     text-align: left;
@@ -310,14 +340,22 @@ li {
 @media (min-width: 768px) {
     .quality p {
         padding-right: 48px;
+        line-height: 2.27;
+        padding-top: 6px;
     }
 }
 
 /* 感想 */
 .slick-slide img {
     box-sizing: border-box;
-    width: 88px;
+    max-width: 88px;
     padding-left: 8px;
+}
+
+@media (min-width: 768px) {
+    .slick-slide img {
+        max-width: 113px;
+    }
 }
 
 .Voices-content {
@@ -327,11 +365,26 @@ li {
     padding-right: 39px;
 }
 
+@media (min-width: 768px) {
+    .Voices-content {
+        max-width: 1156px;
+        margin: auto;
+        padding: 0;
+    }
+}
+
 .title-voices {
     text-align: center;
     padding-top: 8px;
     padding-left: 2px;
     letter-spacing: 1.8px;
+}
+
+@media (min-width: 768px) {
+    .title-voices {
+        padding: 0;
+        margin-top: 86px;
+    }
 }
 
 .Voices {
@@ -342,9 +395,24 @@ li {
     margin-bottom: 8px;
 }
 
+@media (min-width: 768px) {
+    .Voices {
+        font-size: 45px;
+    }
+}
+
 .customer-Voices {
     font-weight: 400;
     margin-bottom: 32px;
+}
+
+@media (min-width: 768px) {
+    .customer-Voices {
+        margin: 0;
+        margin-top: 11px;
+        font-size: 20px;
+        letter-spacing: 0.5px;
+    }
 }
 
 /* スライダー */
@@ -355,7 +423,8 @@ li {
 
 @media (min-width: 768px) {
     .carousel-Customer {
-        margin: 0 40px;
+        width: 300px;
+        margin: 0 20px;
     }
 }
 
@@ -379,9 +448,15 @@ li {
     padding-bottom: 28px;
 }
 
-
 .slick-dotted.slick-slider {
     margin-bottom: 73px;
+}
+
+@media (min-width: 768px) {
+    .slick-dotted.slick-slider {
+        margin-top: 40px;
+        margin-bottom: 154px;
+    }
 }
 
 .slick-prev,
@@ -391,17 +466,32 @@ li {
     transform: translate(0, -80%)
 }
 
-/* .slick-next,
-.slick-prev {
-    width: 32px;
-} */
+@media (min-width: 768px) {
+
+    .slick-prev,
+    .slick-next {
+        transform: translate(0, -4%)
+    }
+}
 
 .slick-prev {
     left: -39px;
 }
 
+@media (min-width: 768px) {
+    .slick-prev {
+        left: -36px;
+    }
+}
+
 .slick-next {
     right: -39px;
+}
+
+@media (min-width: 768px) {
+    .slick-next {
+        right: -36px;
+    }
 }
 
 .slick-prev:before,
@@ -410,6 +500,15 @@ li {
     font-family: bootstrap-icons !important;
     font-size: 32px;
 }
+
+@media (min-width: 768px) {
+
+    .slick-prev:before,
+    .slick-next:before {
+        font-size: 40px;
+    }
+}
+
 
 .slick-next:before {
     content: '\F133';
@@ -448,8 +547,15 @@ li {
 /* Q&A */
 .inquiry-content {
     background: transparent linear-gradient(90deg, #F4FFE8 0%, #C6F0FE 100%) 0% 0% no-repeat padding-box;
-    padding-bottom: 13px;
+    padding-bottom: 11px;
 }
+
+@media (min-width: 768px) {
+    .inquiry-content {
+        padding-bottom: 46px;
+    }
+}
+
 
 .inquiry-title {
     text-align: center;
@@ -458,10 +564,23 @@ li {
     margin-bottom: 40px;
 }
 
+@media (min-width: 768px) {
+    .inquiry-title {
+        padding-top: 46px;
+        letter-spacing: 1.5px;
+    }
+}
+
 .inquiry-title h2 {
     font-family: "EB Garamond", serif;
     font-size: 30px;
     font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .inquiry-title h2 {
+        font-size: 45px;
+    }
 }
 
 .inquiry-title p {
@@ -470,6 +589,14 @@ li {
     letter-spacing: 0.5px;
 }
 
+@media (min-width: 768px) {
+    .inquiry-title p {
+        font-size: 20px;
+        padding-top: 20px;
+        letter-spacing: 0.6px;
+        margin-bottom: 45px;
+    }
+}
 
 .inquiry-list {
     background-color: #fff;
@@ -481,7 +608,8 @@ li {
 @media (min-width: 768px) {
     .inquiry-list {
         max-width: 600px;
-        margin: 1rem auto;
+        margin: auto;
+        margin-bottom: 24px;
     }
 }
 
@@ -503,6 +631,15 @@ li {
     margin-bottom: 14px;
 }
 
+@media (min-width: 768px) {
+    .question-box {
+        margin-top: 24px;
+        margin-left: 16px;
+        padding-left: 7.3px;
+    }
+}
+
+
 .question-icon {
     width: 16px;
     height: 21px;
@@ -516,16 +653,38 @@ li {
     flex-shrink: 0;
 }
 
+@media (min-width: 768px) {
+    .question-icon {
+        width: 18px;
+        height: 23px;
+        font-size: 18px;
+    }
+}
+
 .customer-q-text {
     font-size: 15px;
     line-height: 1.78;
     padding-left: 0.9px;
 }
 
+
+@media (min-width: 768px) {
+    .customer-q-text {
+        padding-left: 4.3px;
+    }
+}
+
 .bi-caret-down-fill {
     position: absolute;
     top: 17px;
     right: 14px;
+}
+
+@media (min-width: 768px) {
+    .bi-caret-down-fill {
+        top: 23px;
+        right: 23px;
+    }
 }
 
 /* ▼ の向き */
@@ -553,6 +712,13 @@ li {
     padding-bottom: 16px;
 }
 
+@media (min-width: 768px) {
+    .answer-box {
+        padding-top: 3px;
+        padding-left: 23px;
+    }
+}
+
 .answer-icon {
     width: 16px;
     height: 21px;
@@ -566,12 +732,36 @@ li {
     flex-shrink: 0;
 }
 
+@media (min-width: 768px) {
+    .answer-icon {
+        width: 18px;
+        height: 23px;
+        font-size: 18px;
+        padding-top: 6px;
+    }
+}
+
 .customer-a-text {
     padding-bottom: 13px;
     line-height: 1.85;
 }
 
+@media (min-width: 768px) {
+    .customer-a-text {
+        padding-left: 5px;
+        padding-right: 8px;
+        padding-bottom: 2px;
+    }
+}
 
+
+/* ﾎﾞﾀﾝ　footer の上 */
+@media (min-width: 768px) {
+    .online-content-2 {
+        margin-bottom: 46px;
+        padding-top: 34px;
+    }
+}
 
 /* footer */
 footer {
@@ -584,13 +774,19 @@ footer {
 }
 
 @media (min-width: 768px) {
+    footer {
+        padding-top: 24px;
+    }
+}
+
+@media (min-width: 768px) {
     .footer-title {
-        max-width: 1200px;
+        max-width: 1131px;
         flex-wrap: wrap;
         margin: auto;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         gap: 32px;
     }
 }
@@ -600,12 +796,16 @@ footer h2 {
     font-family: "Marcellus", system-ui;
     font-size: 28px;
     letter-spacing: 5.6px;
+    padding-left: 5px;
 }
 
 @media (min-width: 768px) {
     footer h2 {
         font-size: 32px;
-        min-width: 190px;
+        max-width: 201px;
+        font-weight: 400;
+        letter-spacing: 6.3px;
+        padding-left: 0;
     }
 }
 
@@ -621,9 +821,10 @@ footer h2 {
 
 @media (min-width: 768px) {
     .footer-nav {
-        min-width: 340px;
+        max-width: none;
         font-size: 14px;
         padding: 0;
+        padding-left: 45px;
     }
 }
 
@@ -631,6 +832,7 @@ footer h2 {
 @media (min-width: 768px) {
     .footer-copyright {
         min-width: 241px;
+        letter-spacing: 0.5px;
     }
 }
 
@@ -647,10 +849,13 @@ small {
     width: 40px;
     height: 40px;
     font-size: 24px;
+    line-height: 1;
+    padding-top: 6px;
 }
 
 @media (min-width: 768px) {
     .buttom-to-top {
-        bottom: 103px;
+        bottom: 104px;
+        right: 150px;
     }
 }
