@@ -85,7 +85,7 @@ li {
 
 @media (min-width: 768px) {
     .selling-point {
-        max-width: 1200px;
+        /* max-width: 301px; */
         margin: auto;
         transform: none;
         bottom: auto;
@@ -95,7 +95,7 @@ li {
     }
 }
 
-.selling-point h2 {
+.main-title {
     font-family: "Marcellus", system-ui;
     font-size: 40px;
     font-weight: 400;
@@ -104,7 +104,7 @@ li {
 }
 
 @media (min-width: 768px) {
-    .selling-point h2 {
+    .main-title {
         font-size: 50px;
         letter-spacing: 15px;
         line-height: 0.87;
@@ -112,7 +112,7 @@ li {
     }
 }
 
-.selling-point p {
+.main-description {
     font-size: 20px;
     font-weight: 400;
     margin-top: 17px;
@@ -120,7 +120,7 @@ li {
 }
 
 @media (min-width: 768px) {
-    .selling-point p {
+    .main-description {
         font-size: 25px;
         letter-spacing: 7.5px;
     }
@@ -354,7 +354,9 @@ li {
 
 @media (min-width: 768px) {
     .slick-slide img {
-        max-width: 113px;
+        max-width: 101px;
+        padding-left: 0;
+        padding-top: 9px;
     }
 }
 
@@ -367,7 +369,7 @@ li {
 
 @media (min-width: 768px) {
     .Voices-content {
-        max-width: 1156px;
+        max-width: 1020px;
         margin: auto;
         padding: 0;
     }
@@ -438,6 +440,13 @@ li {
     padding-top: 9px;
 }
 
+@media (min-width: 768px) {
+    .carousel-Customer-name {
+        font-size: 16px;
+        padding-top: 6px;
+    }
+}
+
 .carousel-Customer-opinion {
     font-size: 14px;
     text-align: left;
@@ -448,6 +457,17 @@ li {
     padding-bottom: 28px;
 }
 
+@media (min-width: 768px) {
+    .carousel-Customer-opinion {
+        font-size: 16px;
+        line-height: 1.75;
+        padding-top: 7px;
+        padding-left: 15px;
+        padding-right: 16px;
+        padding-bottom: 38px;
+    }
+}
+
 .slick-dotted.slick-slider {
     margin-bottom: 73px;
 }
@@ -455,7 +475,7 @@ li {
 @media (min-width: 768px) {
     .slick-dotted.slick-slider {
         margin-top: 40px;
-        margin-bottom: 154px;
+        margin-bottom: 114px;
     }
 }
 
@@ -470,7 +490,7 @@ li {
 
     .slick-prev,
     .slick-next {
-        transform: translate(0, -4%)
+        transform: translate(0, -125%)
     }
 }
 
@@ -480,7 +500,7 @@ li {
 
 @media (min-width: 768px) {
     .slick-prev {
-        left: -36px;
+        left: -68px;
     }
 }
 
@@ -490,7 +510,7 @@ li {
 
 @media (min-width: 768px) {
     .slick-next {
-        right: -36px;
+        right: -52px;
     }
 }
 
@@ -505,7 +525,7 @@ li {
 
     .slick-prev:before,
     .slick-next:before {
-        font-size: 40px;
+        font-size: 48px;
     }
 }
 
@@ -520,6 +540,12 @@ li {
 
 .slick-dots {
     bottom: -32px;
+}
+
+@media (min-width: 768px) {
+    .slick-dots {
+        bottom: -41px;
+    }
 }
 
 .slick-dots li {
@@ -552,7 +578,7 @@ li {
 
 @media (min-width: 768px) {
     .inquiry-content {
-        padding-bottom: 46px;
+        padding-bottom: 45px;
     }
 }
 
@@ -769,19 +795,20 @@ footer {
     background-color: #0071CE;
     color: #fff;
     text-align: center;
-    padding-top: 16.4px;
+    padding-top: 24.4px;
     padding-bottom: 24px;
 }
 
 @media (min-width: 768px) {
     footer {
-        padding-top: 24px;
+        padding-top: 32px;
+        padding-bottom: 32px;
     }
 }
 
 @media (min-width: 768px) {
     .footer-title {
-        max-width: 1131px;
+        max-width: 1132px;
         flex-wrap: wrap;
         margin: auto;
         display: flex;
@@ -791,23 +818,20 @@ footer {
     }
 }
 
-footer h2 {
-    text-align: center;
-    font-family: "Marcellus", system-ui;
-    font-size: 28px;
-    letter-spacing: 5.6px;
-    padding-left: 5px;
+.footer-title img {
+    max-width: 166px;
+    height: auto;
+    margin: auto;
 }
 
 @media (min-width: 768px) {
-    footer h2 {
-        font-size: 32px;
-        max-width: 201px;
-        font-weight: 400;
-        letter-spacing: 6.3px;
-        padding-left: 0;
+    .footer-title img {
+        max-width: 190px;
+        height: auto;
+        margin: 0;
     }
 }
+
 
 .footer-nav {
     display: flex;
@@ -815,7 +839,7 @@ footer h2 {
     margin: auto;
     gap: 30px;
     font-size: 12px;
-    padding-top: 15px;
+    padding-top: 22px;
     padding-bottom: 16px;
 }
 
@@ -844,8 +868,9 @@ small {
     position: absolute;
     background-color: #0071CE;
     color: #fff;
-    bottom: 169px;
+    top: 0;
     right: 16px;
+    transform: translateY(-100%);
     width: 40px;
     height: 40px;
     font-size: 24px;
@@ -855,7 +880,8 @@ small {
 
 @media (min-width: 768px) {
     .buttom-to-top {
-        bottom: 104px;
+        top: 0;
         right: 150px;
+        transform: translateY(-100%);
     }
 }
